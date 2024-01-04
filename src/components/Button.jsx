@@ -1,8 +1,8 @@
 
-function Button( props ) {
+function Button( {disabled, onClick,type, buttonText } ) {
 
   return (
-    <button disabled={props.disabled} onClick={props.onClick} type={props.type}>{props.buttonText}</button>
+    <button disabled={disabled} onClick={onClick} type={type}>{buttonText}</button>
   );
 
 
